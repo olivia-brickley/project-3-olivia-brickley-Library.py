@@ -9,10 +9,10 @@ class LibraryItem:
     def __init__(self, library_item_id, title, location, checked_out_by, requested_by, date_checked_out):
         self._library_item_id = library_item_id
         self._title = title
-        self._location = "ON_SHELF"
-        self._checked_out_by = None
-        self._requested_by = None
-        self._date_checked_out = None
+        self._location = location
+        self._checked_out_by = checked_out_by
+        self._requested_by = requested_by
+        self._date_checked_out = date_checked_out
 
     def get_title(self):
         """Returns an item's title"""
